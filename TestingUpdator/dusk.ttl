@@ -1,0 +1,14 @@
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix vom:   <http://vocab.arvida.de/2015/06/vom/vocab/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix maths: <http://vocab.arvida.de/2015/06/maths/vocab/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wot:   <http://www.webofthings.org/vocab/> .
+@base <http://devices.dfki.de/> . 
+
+<mySensor/properties/luminousEnergy/values/latest>
+					  rdf:type wot:Value , vom:QuantityValue, maths:Scalar ;
+					  vom:valueQuantity <mySensor/properties/luminousEnergy> ;
+					  vom:unit vom:lumen .
